@@ -83,20 +83,21 @@ public class Activity3 extends Activity implements View.OnClickListener {
 			//browser.loadUrl("http://maps.google.com/?ie=UTF8&ll=53.307086,-6.224573&spn=0.000636,0.002583&t=h&z=19");
 			//browser.loadUrl("http://www.ucd.ie/itservices/mediaservices/interactivemapminisite/interactivemap/");
 			Intent intent3 = new Intent(this.getBaseContext(), Disp_Map.class);
-			intent.putExtra("test", 1);
+			//intent.putExtra("test2", 1);
 			startActivity(intent3);
 			//browser.getSettings().setBuiltInZoomControls(true);
 			//browser.loadUrl("http://www.openstreetmap.org/export/embed.html?bbox=-6.23952,53.3021,-6.20536,53.31357&amp;layer=mapnik&amp;marker=53.30971,-6.22270");
-		
 			break;
 		case 13:
-			Intent intent2 = new Intent(this.getBaseContext(),
-					GeoPosition.class);
+			Intent intent2 = new Intent(this.getBaseContext(), GeoPosition.class);
+			//intent.putExtra("test2", 3);
 			startActivity(intent2);
+			break;
 		case 14:
-			Intent intent4 = new Intent(this.getBaseContext(), Disp_Map.class);
-			intent.putExtra("test", 2);
+			Intent intent4 = new Intent(this.getBaseContext(), Disp_Food.class);
+			//intent.putExtra("test2", 2);
 			startActivity(intent4);
+			break;
 		default:
 			browser.loadUrl("http://www.ucdconnect.ie");
 			break;

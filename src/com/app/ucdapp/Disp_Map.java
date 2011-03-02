@@ -1,3 +1,8 @@
+/* This is called by Activity3 class when map option is chosen.
+ * Displays a  simple graphic first and on click
+ * uses map layout to display an enlarged map.
+ */
+
 package com.app.ucdapp;
 
 
@@ -18,24 +23,15 @@ public class Disp_Map extends Activity implements OnClickListener {
 	Button alert;
 	ImageView imageView;
 	Button alert2;
-	int checksite;
+	int checksite=1;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.map_disp);
 		imageView = (ImageView) findViewById(R.id.imageView);
-		Intent intent = this.getIntent();
-		Bundle par_variable = intent.getExtras();
-		checksite = par_variable.getInt("test");
-		if (checksite == 1) {
 		imageView.setImageResource(R.drawable.campus);
 		imageView.setOnClickListener(this);
-		}
-		else if (checksite == 2) {
 			
-			startBrowser();
-			browser.loadUrl("file:///android_asset/campuseateries.png");
-		}
 		alert2 = (Button) findViewById(R.id.back);
 		alert2.setOnClickListener(this);
 
@@ -59,8 +55,8 @@ public class Disp_Map extends Activity implements OnClickListener {
 			
 		}
 		if ((view == alert) ||  (view == alert2)){
-			Intent intent = new Intent(view.getContext(), ucdapp.class);
-			startActivity(intent);
+			Intent intentb = new Intent(view.getContext(), ucdapp.class);
+			startActivity(intentb);
 
 		}
 

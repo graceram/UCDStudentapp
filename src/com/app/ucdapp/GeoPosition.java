@@ -83,12 +83,12 @@ public class GeoPosition extends MapActivity implements OnClickListener {
 			int lng = (int) (location.getLongitude() * 1E6);
 			
 			p = new GeoPoint(lat,lng);
-			//p = new GeoPoint(53306518, -6223497);
+			p = new GeoPoint(53306518, -6223497);
 			//GeoPoint point = new GeoPoint(lat, lng);
 			mapController.animateTo(p);
 			MapOverlay mapOverlay = new MapOverlay();
 	        List<Overlay> listOfOverlays = mapView.getOverlays();
-	       listOfOverlays.clear();
+	       //listOfOverlays.clear();
 	       listOfOverlays.add(mapOverlay);
 		}
 
@@ -102,7 +102,7 @@ public class GeoPosition extends MapActivity implements OnClickListener {
 
 		@Override
 		public void onProviderEnabled(String arg0) {
-			// TODO Auto-generated method stub
+			
 			
 		}
 	}
