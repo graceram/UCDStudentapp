@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, ucdapp!</string>
-    <string name="app_name">ucdapp</string>
+    <string name="app_name">UCDApp</string>
      <string-array name="appnames">
 		<item>Mail</item>
 		<item>Schedule</item>
 		<item>Accounts</item>
 		<item>Deadlines</item>
-		<item>Moodle</item>
+		<item>CSI Moodle</item>
 		<item>Blackboard</item>
 		<item>UCD Connect</item>
 		<item>SIS Web</item>
@@ -15,8 +15,8 @@
 		<item>Events</item>
 		<item>Library</item>
 		<item>Human Resource</item>
-		<item>Maps</item>
-		<item>Interactive Map</item>
+		<item>Campus Map</item>
+		<item>Services Map</item>
 		<item> Restaurants Map</item>
 	</string-array>
 </resources>

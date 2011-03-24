@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/maplayout" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:padding="10dp" android:id="@+id/layoutbutton">
+		<Button android:id="@+id/back" android:textSize="14sp"
+			android:padding="5dp" android:textColor="#ffffff" android:text="Back to Main Menu"
+			android:textStyle="bold" android:layout_gravity="center_horizontal"
+			android:clickable="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="#2563EA"
+			android:gravity="center" />
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/web" android:layout_below="@+id/layoutbutton">
+		<ImageView android:id="@+id/imageView"
+			android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:adjustViewBounds="true"
+			android:paddingBottom="20dp" android:paddingTop="20dp" />
+	</LinearLayout>
+</RelativeLayout>

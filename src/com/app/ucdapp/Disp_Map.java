@@ -13,12 +13,12 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-public class Disp_Map extends Activity implements OnClickListener {
+public class Disp_Map extends Activity implements OnClickListener, OnTouchListener {
 	WebView browser;
 	Button alert;
 	ImageView imageView;
@@ -27,7 +27,7 @@ public class Disp_Map extends Activity implements OnClickListener {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.map_disp);
+		setContentView(R.layout.disp_map);
 		imageView = (ImageView) findViewById(R.id.imageView);
 		imageView.setImageResource(R.drawable.campus);
 		imageView.setOnClickListener(this);
@@ -37,8 +37,9 @@ public class Disp_Map extends Activity implements OnClickListener {
 
 	}
 	private void startBrowser()  {
-	setContentView(R.layout.list_view);
+	setContentView(R.layout.web_view);
 	browser = (WebView) findViewById(R.id.webkit);
+	//browser.setOnTouchListener(this);
 	browser.getSettings().setJavaScriptEnabled(true);
 	browser.getSettings().setDefaultFontSize(16);
 	browser.getSettings().setBuiltInZoomControls(true);
@@ -65,17 +66,22 @@ public class Disp_Map extends Activity implements OnClickListener {
 	public boolean onTouchEvent(MotionEvent event) 
     {   
        
-        if (event.getAction() == 1) {                
-         int p = (int) event.getX();
-  	     int q = (int) event.getY();
-  	    
-                Toast.makeText(getBaseContext(), 
-                  p + "," + 
-                 q ,
-                 Toast.LENGTH_SHORT).show();
-                 }
+//        if (event.getAction() == 1) {                
+//         int p = (int) event.getX();
+//  	     int q = (int) event.getY();
+//  	    
+//                Toast.makeText(getBaseContext(), 
+//                  p + "," + 
+//                 q ,
+//                 Toast.LENGTH_SHORT).show();
+//                 }
                  return  false;
     }
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 
 
 }

@@ -13,7 +13,7 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".Activity3" android:theme="@android:style/Theme.NoTitleBar"
+		<activity android:name=".Web_View" android:theme="@android:style/Theme.NoTitleBar"
 			android:configChanges="keyboardHidden|orientation">
 		</activity>
 		<activity android:name=".ucdapp" android:theme="@android:style/Theme.NoTitleBar"
@@ -22,10 +22,14 @@
 		<activity android:name="GeoPosition" android:theme="@android:style/Theme.NoTitleBar"
 			android:configChanges="keyboardHidden|orientation">
 		</activity>
+		<activity android:name="Map" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+		
 		<activity android:name="Disp_Map" android:theme="@android:style/Theme.NoTitleBar"
 			android:configChanges="keyboardHidden|orientation">
 		</activity>
-		<activity android:name="Disp_Food" android:theme="@android:style/Theme.NoTitleBar"
+		<activity android:name="DispFood" android:theme="@android:style/Theme.NoTitleBar"
 			android:configChanges="keyboardHidden|orientation">
 		</activity>
 		<uses-library android:name="com.google.android.maps" />
