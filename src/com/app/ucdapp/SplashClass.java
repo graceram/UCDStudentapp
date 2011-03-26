@@ -3,6 +3,8 @@
  * When the user clicks the screen, the app starts. 
  * This uses splash xml and the welcome image.
  * This class calls ucdapp.class
+ * Version 1.0 was first upload for Android 2.2
+ * This is Version 1.1 where Android 2.1 is used and icon rotation is fixed.
  */
 package com.app.ucdapp;
 

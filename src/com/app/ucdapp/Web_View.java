@@ -1,6 +1,6 @@
 /* This class is called by ucdapp class.
  * Uses list_view layout to display the applications as web view.
- * Interactive map is displayed using GeoPosition class.
+ * 
  * Back to Main Menu button allows users to go back to Main menu. 
  */
 package com.app.ucdapp;
@@ -79,10 +79,8 @@ public class Web_View extends Activity implements View.OnClickListener {
 			browser.loadUrl("http://www.ucd.ie/hr/");
 			break;
 		case 12:
-			
 			Intent intent3 = new Intent(this.getBaseContext(), Disp_Map.class);
 			startActivity(intent3);
-			
 			break;
 		case 13:
 			Intent intent2 = new Intent(this.getBaseContext(), Map.class);

@@ -1,8 +1,9 @@
 /* The SplashClass calls this ucdapp class.
  * This class uses the ImageAdapter class and grid_ucdapp.xml 
  * to display icons of all the applications as a grid.
- * When any of the icon is clicked, Activity3 class is called.
+ * When any of the icon is clicked, Web_View class is called.
  */
+
 
 package com.app.ucdapp;
 
@@ -19,7 +20,7 @@ import android.widget.AdapterView.OnItemClickListener;
 public class ucdapp extends Activity {
 	/** Called when the activity is first created. */
 	TextView selection;
-
+	GridView gridview;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,10 +29,10 @@ public class ucdapp extends Activity {
 		selection.setText("Welcome to UCD APP");
 
 		selection.setAnimation(AnimationUtils.loadAnimation(this,
-				R.anim.push_up_out));
-		selection.getAnimation().setStartTime(7000);
+			R.anim.push_up_out));
+		//selection.getAnimation().setStartTime(3000);
 
-		GridView gridview = (GridView) findViewById(R.id.gridview);
+		gridview = (GridView) findViewById(R.id.gridview);
 		gridview.setAdapter(new ImageAdapter(this));
 		gridview.setOnItemClickListener(new OnItemClickListener()
 
@@ -43,7 +44,7 @@ public class ucdapp extends Activity {
 				startActivity(intent);
 			}
 
-		});
 
+		});
 	}
 }
